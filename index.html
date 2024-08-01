@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!--  Used Different fonts so that the UI looks Great -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="weather-dashboard">
+        <div class="weather-container">
+            
+            <!-- Search Box -->
+            <div class="search-container">
+                <input type="text" id="location-input" class="search-box" placeholder="Enter a location" />
+                
+                <!-- An UL list to show the recent cities -->
+                <ul id="recent-cities-dropdown" class="dropdown-menu"></ul>
+
+                <button id="search-button" class="search-button">Search</button>
+                <span>OR</span>
+                <button id="current-location-button" class="search-button">Current Location</button>
+            </div>
+
+            <div class="main-weather"> 
+                
+                <!--This section is to Present the main weather data-->
+                <div class="temperature">
+                    <h1>
+                        <p id="current-temp" style="font-size: 2rem; color: blue;">0°C</p>
+                    </h1>
+                    <h1>
+                        <p id="city-name"></p>
+                    </h1>
+
+                </div>
+                <div class="weather-icon">
+                    <h1 style="font-size: 1.5rem; color: rgb(102, 157, 244);">TODAY'S CONDITION</h1>
+                    <p id="current-condition">Condition</p>
+                </div>
+                <div class="weather-details">
+                    <div class="detail">
+                        <img src="humidity.png" alt="Humidity">
+                        <p id="current-humidity">Humidity: 0%</p>
+                    </div>
+                    <div class="detail">
+                        <img src="wind.png" alt="Wind Speed">
+                        <p id="current-wind">Wind Speed: 0 km/h</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="forecast">
+                <div class="five-days">
+                    
+                    <h2>Coming 3 Days Forcast</h2>    <!--- Here The section will show the forcast for coming 3 days Included present day-->
+                    <ul>
+                        <li class="forecast-day" id="forecast-0">
+
+                            <h3 id="day-0-date" style="font-size: 1rem;">Date</h3>
+                            <img id="day-0-icon" src="" alt="Weather Icon">
+                            <p id="day-0-condition">Condition</p>
+                            <p id="day-0-temp">Max: 0°C / Min: 0°C</p>
+                        </li>
+                        <li>
+
+                            <h3 id="day-1-date" style="font-size: 1rem;">Date</h3>
+                            <img id="day-1-icon" src="" alt="Weather Icon">
+                            <p id="day-1-condition">Condition</p>
+                            <p id="day-1-temp">Max: 0°C / Min: 0°C</p>
+                        </li>
+                        <li>
+                            <h3 id="day-2-date" style="font-size: 1rem;">Date</h3>
+                            <img id="day-2-icon" src="" alt="Weather Icon">
+                            <p id="day-2-condition">Condition</p>
+                            <p id="day-2-temp">Max: 0°C / Min: 0°C</p>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>

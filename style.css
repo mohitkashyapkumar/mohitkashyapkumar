@@ -1,0 +1,337 @@
+/*  CSS Used to make the UI of the webpage Beautiful and USer Friendly */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.weather-dashboard {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.search-container {
+    gap: 20px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input[type="text"] {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #e7e9ec;
+}
+
+.search-button {
+    background-color: #3fb03f;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease; */
+}
+
+.current-location:hover {
+    background-color: #36a236;
+}
+
+.main-weather {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.temperature {
+    border-right: 1.5px solid black;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 46px;
+    color: #4a4a4a;
+}
+
+.temperature p {
+    font-size: 20px;
+    color: #777777;
+    margin-top: -10px;
+}
+
+.weather-icon {
+    border-right: 1.5px solid black;
+    padding-right: 50px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-icon img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.weather-icon p {
+    font-size: 20px;
+
+    color: #4a4a4a;
+}
+
+.weather-details {
+
+    padding-right: 50px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    color: #4a4a4a;
+}
+
+.detail img {
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+.detail span {
+    font-size: 14px;
+    color: #777777;
+}
+
+.sunrise-sunset {
+
+    padding-right: 50px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+    color: #4a4a4a;
+}
+
+.sunrise-sunset .time {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.sunrise-sunset img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.sunrise-sunset span {
+    font-size: 14px;
+    color: #777777;
+}
+
+.forecast {
+    display: flex;
+    justify-content: center;
+
+}
+
+.five-days,
+.hourly {
+    width: 48%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.five-days h2,
+.hourly h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #4a4a4a;
+    font-weight: bold;
+}
+
+.five-days h2 {
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.five-days ul,
+.hourly ul {
+    list-style: none;
+    padding: 0;
+}
+
+.five-days li,
+.hourly li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.five-days li:last-child,
+.hourly li:last-child {
+    border-bottom: none;
+}
+
+.five-days img,
+.hourly img {
+    width: 32px;
+    margin-right: 10px;
+}
+
+.five-days span,
+.hourly span {
+    font-size: 18px;
+    color: #4a4a4a;
+}
+
+.hourly li span:first-child {
+    font-size: 16px;
+    color: #777777;
+    margin-right: 10px;
+}
+
+.hourly li span:last-child {
+    font-size: 14px;
+    color: #777777;
+    margin-left: 10px;
+}
+
+.hourly li {
+    justify-content: space-around;
+}
+
+.dropdown-menu {
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: list-item;
+    /* Hidden by default, shown when items exist */
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.dropdown-menu li:hover {
+    background-color: #f1f1f1;
+}
+
+
+/*  Here is the CSS using Media Querries To make the webpage userfriendly for mobile Devices ------------------------------------------ */
+
+
+@media screen and (max-width:600px) {
+    body {
+        background-color: lightblue;
+
+    }
+
+    .search-button {
+        font-size: 16px;
+
+    }
+
+    .search-container {
+        gap: 20px;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        /* background-color: #ffffff; */
+        border-radius: 25px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-weather {
+        gap: 30px;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .temperature {
+        border-radius: 20px;
+        border: 2px solid black;
+        /* border-bottom: 1.5px solid black; */
+        padding-bottom: 20px;
+    }
+
+    .weather-icon {
+        border-radius: 20px;
+        border: 2px solid black;
+        padding-bottom: 20px;
+    }
+
+    .weather-details {
+        border-radius: 20px;
+        border: 2px solid black;
+        display: flex;
+        gap: 30px;
+        padding-top: 20px;
+        justify-content: center;
+        
+    }
+
+    .detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+        color: #4a4a4a;
+    }
+
+    .five-days>ul>li {
+        flex-direction: column;
+        text-wrap: wrap;
+    }
+
+    .five-days>h2 {
+        text-align: center;
+        border-bottom: 2px solid black;
+    }
+
+    .five-days {
+        width: auto;
+    }
+}
